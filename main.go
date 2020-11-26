@@ -36,7 +36,7 @@ type Rajaongkir struct {
 }
 
 const (
-	apiKey = "YOUR_API_KEY"
+	apiKey = "ed6c2bcfba37c2fe6cdc51bd1a6170a0"
 )
 
 func httpHeader() http.Header {
@@ -78,11 +78,12 @@ type Data struct {
 	*Ongkir
 }
 
+// formatter
 type Ongkir struct {
-	ProvinceID string `json:"province_id"`
-	Province   string `json:"province"`
-	CityID     string `json:"city_id"`
-	CityName   string `json:"city"`
+	ProvinceID string `json:"provinceId"`
+	Province   string `json:"provinceName"`
+	CityID     string `json:"cityId"`
+	CityName   string `json:"cityName"`
 }
 
 type Error struct {
