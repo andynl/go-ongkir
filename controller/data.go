@@ -16,10 +16,10 @@ type Error struct {
 	Message string `json:"message"`
 }
 
-func getOngkir(w http.ResponseWriter, r *http.Request) {
+func GetOngkir(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var data Data
-	ongkirData, err := scrapper.getOngkir()
+	ongkirData, err := scrapper.GetOngkir()
 	if err != nil {
 		json.NewEncoder(w).Encode(Error{
 			Code:    500,

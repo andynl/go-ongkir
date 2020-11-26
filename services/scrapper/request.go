@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	apiKey = "ed6c2bcfba37c2fe6cdc51bd1a6170a0"
+	apiKey = "YOUR_API_KEY"
 )
 
 func httpHeader() http.Header {

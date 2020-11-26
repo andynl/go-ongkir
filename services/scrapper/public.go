@@ -1,6 +1,6 @@
 package scrapper
 
-func getOngkir() (*OngkirData, error) {
+func GetOngkir() (*OngkirData, error) {
 	OngkirJSON, err := requestOngkir()
 	if err != nil {
 		return nil, err
